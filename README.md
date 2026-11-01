@@ -3,6 +3,21 @@
 A Next.js prototype that turns a user profile and meeting brief into an HTML
 preparation report using Gemini.
 
+**Status:** local prototype with mocked news search and email delivery.
+
+## Workflow
+
+```mermaid
+flowchart LR
+    Form["Profile and meeting brief"] --> Plan["Gemini search planning"]
+    Plan --> News["Mock news results"]
+    News --> Synthesis["Gemini report synthesis"]
+    Synthesis --> Preview["Local HTML email preview"]
+```
+
+This explores a small staged workflow and a reusable briefing interface.
+It is not a live news-research or email-delivery service.
+
 ## Run locally
 
 Use Node.js 20.9 or later. From the repository root:
